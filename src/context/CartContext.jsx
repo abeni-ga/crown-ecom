@@ -12,6 +12,12 @@ export const CartContext = createContext({
   cartTotal:0
 });
 
+export const CART_ACTION_TYPE = {
+  SET_IS_CART_OPEN:'SET_IS_CART-'
+}
+
+// export const cartReducer = (state,aciton)
+
 const addCartItem=(cartItems,productToAdd)=>{
   
   const existingCartItem = cartItems.find((cartItem)=>cartItem.id===productToAdd.id);
